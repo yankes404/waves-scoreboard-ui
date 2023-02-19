@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WavesRP Scoreboard</title>
+    <!-- CREDITS: FiveScripts ( yankes & mrcl. ) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/19fb4a503f.js" crossorigin="anonymous"></script>
+
+    <script src="main.js" defer></script>
+
+    <style>
+        .scoreboard.unshowed {
+            opacity: 0;
+            transform: translateY(-200px);
+        }
+    </style>
+</head>
+<body class="flex justify-center p-4" style='background: url("https://s3-gallery.int-cdn.lcpdfrusercontent.com/monthly_2021_04/large.2138136597_GrandTheftAutoVScreenshot2021_04.01-11_55_41_31.png.ea2dfa9e7da047178f33f23b4303ae51.png"); background-size: cover;'>
+    <div class="scoreboard unshowed bg-black/50 backdrop-blur p-4 rounded-lg text-white px-16 w-96 ease duration-500" id="scoreboard">
+        <div class="serv_name font-bold text-white/50 text-sm tracking-wide w-full text-center">Waves Roleplay</div>
+        <div class="info mt-2 flex space-x-3 text-base justify-center">
+            <div class="pd flex space-x-1 font-medium text-white/75">
+                <p>LSPD:</p>
+                <span id="lspd-count" class="font-bold text-white">0</span>
+            </div>
+            <div class="ems flex space-x-1 font-medium text-white/75">
+                <p>EMS:</p>
+                <span id="ems-count" class="font-bold text-white">0</span>
+            </div>
+            <div class="lsc flex space-x-1 font-medium text-white/75">
+                <p>LSC:</p>
+                <span id="lsc-count" class="font-bold text-white">0</span>
+            </div>
+        </div>
+        <div class="job mt-2 flex py-4 px-8 rounded-md bg-white/25 backdrop-blur justify-center space-x-1 text-sm relative">
+            <p class="font-medium text-white/50">Praca:</p>
+            <span id="player-job" class="font-semibold">Zmywak</span>
+        </div>
+    </div>
+</body>
+</html>
